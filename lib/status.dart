@@ -9,61 +9,67 @@ class Status extends StatelessWidget {
         children: [
           ListTile(
             leading: CircleAvatar(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 25,top: 25),
-                child: CircleAvatar(child: Icon(Icons.add,size: 15,),radius: 10,backgroundColor: Colors.green,),
-              ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 25, top: 25),
+                  child: CircleAvatar(
+                    child: Icon(
+                      Icons.add,
+                      size: 15,
+                    ),
+                    radius: 10,
+                    backgroundColor: Colors.green,
+                  ),
+                ),
                 backgroundImage: NetworkImage(
                     "https://thumbs.dreamstime.com/z/man-profile-cartoon-smiling-vector-illustration-graphic-design-135443492.jpg")),
             title: Text("My Status"),
             subtitle: Text("Tap to add status update"),
           ),
-          Container(
-          width: 200,
-          height: 25,
-          color: Colors.grey[200],
-          child: Align(
-          alignment: Alignment.bottomLeft,
-          child: Text(
-          "Recently updates"
-          ),
-          ),
-          ),
-          ListTile(
-            leading: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  "https://thumbs.dreamstime.com/b/happy-cute-kid-boy-dance-music-happy-cute-kid-boy-dance-music-166494881.jpg"),
-            ),
-            title: Text("Abu"),
-            subtitle: Text("10 minutes ago")
-          ),
-          ListTile(
-            leading: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  "https://miro.medium.com/max/1021/0*O-mKgxVEBOmX06R7.jpg"),
-            ),
-            title: Text("Toto"),
-            subtitle: Text("24 minutes ago")
-          ),
+          Divider(),
           Container(
             width: 200,
             height: 25,
             color: Colors.grey[200],
             child: Align(
               alignment: Alignment.bottomLeft,
-              child: Text(
-                  "Viewed updates"
-              ),
+              child: Text("Recently updates"),
             ),
           ),
+          Divider(),
           ListTile(
-            leading: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  "https://cdn.dribbble.com/users/1787323/screenshots/14677197/media/d699460e529ff1c026dce3931078ebcb.png?compress=1&resize=400x300"),
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    "https://thumbs.dreamstime.com/b/happy-cute-kid-boy-dance-music-happy-cute-kid-boy-dance-music-166494881.jpg"),
+              ),
+              title: Text("Abu"),
+              subtitle: Text("10 minutes ago")),
+          Divider(),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    "https://miro.medium.com/max/1021/0*O-mKgxVEBOmX06R7.jpg"),
+              ),
+              title: Text("Toto"),
+              subtitle: Text("24 minutes ago")),
+          Divider(),
+          Container(
+            width: 200,
+            height: 25,
+            color: Colors.grey[200],
+            child: Align(
+              alignment: Alignment.bottomLeft,
+              child: Text("Viewed updates"),
             ),
-            title: Text("Eldho"),
-            subtitle: Text("Today,12:11 pm")
           ),
+          Divider(),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    "https://cdn.dribbble.com/users/1787323/screenshots/14677197/media/d699460e529ff1c026dce3931078ebcb.png?compress=1&resize=400x300"),
+              ),
+              title: Text("Eldho"),
+              subtitle: Text("Today,12:11 pm")),
+          Divider(),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage(
@@ -72,6 +78,7 @@ class Status extends StatelessWidget {
             title: Text("Shijil"),
             subtitle: Text("Today,10:02 am"),
           ),
+          Divider(),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage(
@@ -80,6 +87,7 @@ class Status extends StatelessWidget {
             title: Text("Moohsi"),
             subtitle: Text("Yeasterday,11:12 pm"),
           ),
+          Divider(),
         ],
       ),
       floatingActionButton: Padding(

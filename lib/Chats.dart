@@ -14,6 +14,7 @@ class Chats extends StatelessWidget{
             subtitle: Text("Daaa"),
             trailing: Text("2:11 pm"),
           ),
+          Divider(),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage("https://miro.medium.com/max/1021/0*O-mKgxVEBOmX06R7.jpg"),
@@ -22,6 +23,7 @@ class Chats extends StatelessWidget{
             subtitle: Text("Oii"),
             trailing: Text("10:22 am"),
           ),
+          Divider(),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage("https://cdn.dribbble.com/users/1787323/screenshots/14677197/media/d699460e529ff1c026dce3931078ebcb.png?compress=1&resize=400x300"),
@@ -30,6 +32,7 @@ class Chats extends StatelessWidget{
             subtitle: Text("Onnullada"),
             trailing: Text("2:30 am"),
           ),
+          Divider(),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage("https://thumbs.dreamstime.com/b/cute-cat-laptop-22089157.jpg"),
@@ -38,6 +41,7 @@ class Chats extends StatelessWidget{
             subtitle: Text("mr.quag"),
             trailing: Text("4:20 pm"),
           ),
+          Divider(),
           ListTile(
             leading: CircleAvatar(
               backgroundImage: NetworkImage("https://images.squarespace-cdn.com/content/v1/59b2de53f5e2314756725548/1587673249356-RKQJV87QSG8VOOQIYF65/kindredxhellbound_82916957_182210803024297_7210237886333459290_n.jpg?format=1000w"),
